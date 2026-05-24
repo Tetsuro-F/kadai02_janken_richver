@@ -1,0 +1,322 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+    background: #f5f7fb;
+    color: #333333;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+
+h1 {
+    margin: 0;
+    font-size: 50px;
+    color: #1a1a1a;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.clock-section {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.clock {
+    font-size: 120px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    font-family: 'Roboto Mono', monospace;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+.alarm-section {
+    background: #fff;
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    text-align: center;
+}
+
+.alarm-section h2 {
+    display: inline-block;
+    font-size: 40px;
+    color: #3399ff;
+    border-bottom: 2px solid #3399ff;
+}
+
+.alarm-controls {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#alarm-time {
+    font-size: 60px;
+    font-weight: bold;
+    height: 90px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+}
+
+button {
+    font-size: 30px;
+    padding: 8px 16px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background: #3399ff;
+    color: #fff;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #1f7ad6;
+}
+
+#clear-alarm {
+    background: #ccc;
+    color: #333;
+}
+
+#clear-alarm:hover {
+    background: #aaa;
+}
+
+.alarm-status {
+    margin: 0;
+    font-size: 40px;
+    color: #666;
+}
+
+.janken-section {
+    margin-top: 60px;
+    padding: 24px;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    text-align: center;
+}
+
+.janken-section h2 {
+    display: inline-block;
+    margin-top: 0;
+    font-size: 40px;
+    margin-bottom: 8px;
+    color: #3399ff;
+    font-weight: bold;
+    border-bottom: 2px solid #3399ff;
+}
+
+.janken-desc {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 30px;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mainlabel {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #0b1117;
+}
+
+.jankenbuttons {
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    padding: 0;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.jankenbuttons .btn {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 3px solid #ddd;
+}
+
+.jankenbuttons .btn img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.jankenbuttons .btn:hover {
+    transform: scale(1.1);
+    background: #fff;
+    border-color: #ffcc00;
+}
+
+.resultarea {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.resultarea .label {
+    font-size: 50px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    color: #0b1117;
+}
+
+.pc_hand img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.judgment {
+    font-size: 90px;
+    font-weight: bold;
+    color: #3399ff;
+}
+
+#confetti-container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50vw;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    opacity: 0.8;
+    animation: fall 5s linear forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-20%) rotate(0deg);
+    }
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    .clock {
+        font-size: 60px;
+        letter-spacing: 3px;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .alarm-section {
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    .alarm-section h2 {
+        font-size: 28px;
+    }
+
+    .alarm-controls {
+        gap: 8px;
+    }
+
+    #alarm-time {
+        font-size: 32px;
+        height: 60px;
+        padding: 4px 8px;
+        width: 100%;
+        max-width: 260px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 6px 12px;
+    }
+
+    .alarm-status {
+        font-size: 24px;
+    }
+
+    .janken-section {
+        margin-top: 40px;
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    .janken-section h2 {
+        font-size: 28px;
+    }
+
+    .janken-desc {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .mainlabel {
+        font-size: 28px;
+        margin-top: 24px;
+    }
+
+    .jankenbuttons {
+        gap: 24px;
+    }
+
+    .jankenbuttons .btn {
+        width: 90px;
+        height: 90px;
+    }
+
+    .jankenbuttons .btn img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .resultarea .label {
+        font-size: 28px;
+        margin-top: 40px;
+        margin-bottom: 24px;
+    }
+
+    .pc_hand img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .judgment {
+        font-size: 48px;
+    }
+}
+

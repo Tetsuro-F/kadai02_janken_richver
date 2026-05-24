@@ -1,0 +1,136 @@
+body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+}
+header{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+/* main{
+    border-bottom:1px solid #ccc; */
+}
+footer{
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+}
+/* p{
+    font-size:200%;
+    text-align: center;
+    border-bottom:1px solid #fff;
+    height:200px;
+} */
+/* ul{
+    padding: 0;
+    border-top: 1px solid #000000;
+    display:table;
+    table-layout: fixed;
+    width:100%;
+} */
+/* li{
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color: #FFF;
+    display:table-cell;
+    cursor: pointer;
+} */
+/* li:hover{
+    background: #0066CC;
+    color:#fff;
+} */
+
+.mainlabel {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.jankenbuttons {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.jankenbuttons .btn {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 3px solid #ddd;
+}
+
+.jankenbuttons .btn img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.jankenbuttons .btn:hover {
+    transform: scale(1.1);
+    background: #fff;
+    border-color: #ffcc00;
+}
+
+.resultarea {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.resultarea .label {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.pc_hand img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.judgment {
+    font-size: 100px;
+    font-weight: bold;
+    color: #3399ff;
+}
+
+/* #confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    opacity: 0.8;
+    animation: fall 5s linear forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-20%) rotate(0deg);
+    }
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+    }
+} */
